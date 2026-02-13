@@ -127,11 +127,12 @@ Matthews Correlation Coefficient (MCC)
 These metrics provide a balanced evaluation, especially for imbalanced churn datasets.
 
 6️⃣ Model Performance Comparison
-Model	Accuracy	AUC	Precision	Recall	F1 Score	MCC
-Logistic Regression	0.6125	0.7756	0.3244	0.8354	0.4674	0.3151
-KNN	0.8255	0.7740	0.5967	0.4398	0.5064	0.4102
-Naive Bayes	0.8035	0.7875	0.5191	0.4668	0.4916	0.3710
-XGBoost	0.8050	0.8347	0.5165	0.6536	0.5770	0.4578
+ML Model	Accuracy	AUC	Precision	Recall	F1 Score	MCC
+Logistic Regression	0.6125	0.775583	0.324427	0.835381	0.467354	0.315146
+Decision Tree	0.8610	0.840670	0.779221	0.442260	0.564263	0.516748
+KNN	0.8255	0.773991	0.596667	0.439803	0.506365	0.410240
+Naive Bayes	0.8035	0.787455	0.519126	0.466830	0.491591	0.371032
+Random Forest	0.8570	0.847899	0.694534	0.530713	0.601671	0.523361
 
 (Values obtained from evaluation on processed test dataset through Streamlit app.)
 
