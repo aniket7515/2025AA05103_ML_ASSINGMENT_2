@@ -69,7 +69,12 @@ if uploaded_file:
 
     model = models[model_name]
 
-    y_prob = model.predict_proba(X_scaled)[:, 1]
+    # y_prob = model.predict_proba(X_scaled)[:, 1]
+    if hasattr(model, "predict_proba"):
+        y_prob = model.predict_proba(X_scaled)[:, 1]
+    else:
+        y_prob = model.predict(X_scaled)
+
     y_pred = (y_prob >= threshold).astype(int)
 
     # ---------------------------------------
